@@ -12,6 +12,7 @@ function landingPage() {
         techStack={"Vite / Tailwind / Github"}
         alt={"Chas Academy"}
         codeLink={"https://github.com/RebeckaGamble/chas_landing_page"}
+        demoLink={"https://chas-landing-page.vercel.app/"}
         text={
           "I made some parts of the Chas Academy landing page."
         }
