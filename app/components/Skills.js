@@ -49,7 +49,7 @@ function Skills() {
         <p className="text-xl tracking-widest uppercase text-[#9E2DA8]">
           Skills
         </p>
-        <h2 className="py-4">I have worked with</h2>
+        <h2 className="py-4">{/*I have worked with*/}I have experience in</h2>
         <div className="w-full py-6 shadow-md bg-slate-50 mb-10">
           <ul className="flex flex-wrap flex-row w-full font-semibold gap-4 justify-center">
             {["All", "Front-End", "DevOps", "Database", "Backend"].map(
@@ -76,20 +76,6 @@ function Skills() {
               title={skill.alt}
             />
           ))}
-          {/** 
-          <SkillsCard src={HTML} alt={"HTML"} title={"HTML"} />
-          <SkillsCard src={CSS} alt={"CSS"} title={"CSS"} />
-          <SkillsCard src={JS} alt={"JavaScript"} title={"JavaScript"} />
-          <SkillsCard src={REACT} alt={"React"} title={"React"} />
-          <SkillsCard src={Next} alt={"Next.js"} title={"Next.js"} />
-          <SkillsCard src={Tailwind} alt={"Tailwind"} title={"Tailwind"} />
-          <SkillsCard src={Vite} alt={"Vite"} title={"Vite"} />
-          <SkillsCard src={Github} alt={"Github"} title={"Github"} />
-          <SkillsCard src={AWS} alt={"AWS"} title={"AWS"} />
-          <SkillsCard src={Express} alt={"Express"} title={"Express"} />
-          <SkillsCard src={Node} alt={"Node.js"} title={"Node.js"} />
-          <SkillsCard src={MySQL} alt={"MySQL"} title={"MySQL"} />
-          */}
         </div>
       </div>
     </div>

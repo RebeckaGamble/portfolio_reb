@@ -9,7 +9,7 @@ function landingPage() {
        <ProjectsCard
         projectName={"Chas academy - Landing page"}
         src={chas}
-        techStack={"Vite / Tailwind / Github"}
+        techStack={"Vite / Tailwind"}
         alt={"Chas Academy"}
         codeLink={"https://github.com/RebeckaGamble/chas_landing_page"}
         demoLink={"https://chas-landing-page.vercel.app/"}

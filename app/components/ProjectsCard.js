@@ -70,9 +70,9 @@ export default function ProjectsCard({
         </div>
         <div className="w-full pt-10">
           <Link href="/#projects">
-            <p className="cursor-pointer flex w-fit items-center rounded-xl hover:uppercase hover:font-semibold hover:text-white hover:bg-[#9E2DA8] px-6 py-1 ">
-              <IoMdArrowRoundBack />
-              <span className="pl-1">Go Back</span>
+            <p className="cursor-pointer flex w-fit items-center rounded-xl uppercase hover:font-semibold bg-[#FC3A79] text-white hover:bg-[#9E2DA8] px-8 py-2 ">
+              <IoMdArrowRoundBack size={20} />
+              <span className="pl-2">Go Back</span>
             </p>
           </Link>
         </div>

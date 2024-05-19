@@ -4,7 +4,7 @@ const AboutCode = () => {
   const [lines, setLines] = useState([]);
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showCursor, setShowCursor] = useState(false); // Flag to toggle cursor display
+  const [showCursor, setShowCursor] = useState(false);
 
   const codeLines = [
     { text: "/* Competencies */", color: "text-[#FC3A79]" },
@@ -22,17 +22,17 @@ const AboutCode = () => {
 
   const codeEditorRef = useRef(null);
   const cursorRef = useRef(null);
-  const typingRef = useRef(null); // Ref to store the typing timeout
+  const typingRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
         const element = codeEditorRef.current;
         if (element && isElementInViewport(element)) {
           if (!typingRef.current) {
-            startTyping(); // Start typing when component is in viewport and not already typing
+            startTyping(); 
           }
         } else {
-          resetTyping(); // Reset typing when component is not in viewport
+          resetTyping(); 
         }
       };
 
@@ -43,7 +43,7 @@ const AboutCode = () => {
 
   useEffect(() => {
     if (!isElementInViewport(codeEditorRef.current)) {
-      resetTyping(); // Reset typing when component is not in viewport
+      resetTyping(); 
     }
   }, [currentIndex]);
 
@@ -58,8 +58,8 @@ const AboutCode = () => {
   };
 
   const resetTyping = () => {
-    clearTimeout(typingRef.current); // Clear typing timeout
-    typingRef.current = null; // Reset typing reference
+    clearTimeout(typingRef.current); 
+    typingRef.current = null; 
     setCurrentIndex(0);
     setTypedText('');
     setLines([]);
@@ -76,28 +76,28 @@ const AboutCode = () => {
         setCurrentIndex((prevIndex) => prevIndex + 1);
         setTypedText('');
         if (currentIndex === codeLines.length - 1) {
-          setShowCursor(true); // Show cursor when typing is complete
+          setShowCursor(true); 
         }
-        typingRef.current = null; // Reset typing reference
+        typingRef.current = null; 
       }
-    }, 50); // Adjust typing speed here (milliseconds)
+    }, 50);
   };
 
   useEffect(() => {
     if (currentIndex < codeLines.length) {
-      startTyping(); // Start typing when currentIndex is within codeLines range
+      startTyping(); 
     } else {
-      setShowCursor(true); // Show cursor after all lines are typed
+      setShowCursor(true); 
     }
 
     return () => {
-      clearTimeout(typingRef.current); // Clear typing timeout on component unmount
+      clearTimeout(typingRef.current); 
     };
   }, [typedText, currentIndex]);
 
   useEffect(() => {
     if (currentIndex === codeLines.length - 1) {
-      setShowCursor(true); // Show cursor on the last line
+      setShowCursor(true); 
     }
   }, [currentIndex]);
 

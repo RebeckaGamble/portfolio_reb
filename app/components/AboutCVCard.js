@@ -19,13 +19,15 @@ export default function AboutCVCard({ title, where, when, text, borderColor }) {
       <>
         <div ref={cardRef} className={`font-serif max-w-[700px] flex flex-grow flex-col w-full mb-6 border-l-4 px-4 py-4 shadow-lg rounded-md bg-white border-${borderColor} `}>
           <h4 className={`text-[20px] text-gray-600 pb-2`}>{title}</h4>
+          <div className="text-[16px]">
           <p className="text-[gray-600]">{where}</p>
           <p className="pb-2">{when}</p>
-          <p className={`text-sm whitespace-pre-line ${isVisible ? 'visible' : 'hidden'}`}>
+          <p className={`whitespace-pre-line ${isVisible ? 'visible' : 'hidden'}`}>
             {isVisible && text && text.split('').map((char, index) => (
               <span key={index} className={`${inView ? "opacity-0 animate-appear" : ""}`} style={{ animationDelay: `${index * 50}ms` }}>{char}</span>
             ))}
           </p>
+          </div>
         </div>
       </>
     );

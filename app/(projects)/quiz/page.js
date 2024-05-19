@@ -8,12 +8,12 @@ function quizPage() {
       <ProjectsCard
         projectName={"Quiz"}
         src={quiz}
-        codeLink={"https://github.com/Yael353/Quiz"}
+        codeLink={"https://github.com/RebeckaGamble/quiz"}
         alt={"Quiz"}
         text={
-          "<h3>Mini group project.</h3> <br> In this group project we have created an interactive quiz using Next.js and Context for global state management."
+          "Quiz using Next.js and Context for global state management."
         }
-        techStack={"Next.js / Tailwind / Github"}
+        techStack={"Next.js / Tailwind"}
         techs={["Next.js", "Tailwind", "Github"]}
       />
     </div>

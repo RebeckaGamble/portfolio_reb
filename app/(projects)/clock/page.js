@@ -13,7 +13,7 @@ function clockPage() {
         demoLink={"https://clock-timer-iota.vercel.app/"}
         codeLink={"https://github.com/RebeckaGamble/clock_timer"}
         text={
-          "<Assignment: <bt> Practice using state in React building a clock/timer."
+          "Assignment: <br> Practice using state in React building a clock/timer."
         }
         techStack={"React / Tailwind "}
         techs={["React", "Tailwind"]}

@@ -12,7 +12,7 @@ const Projects = () => {
         <p className="text-xl tracking-widest uppercase text-[#9E2DA8]">
           Projects
         </p>
-        <h2 className="py-4">What I've built</h2>
+        <h2 className="py-4">{/*What I've built*/}Some school projects</h2>
         <div className="grid md:grid-cols-2 gap-8 b">
           <ProjectItem
             title="Zoom simplifie"

@@ -23,7 +23,7 @@ function About({ activeLink }) {
           </p>
           <h2 className="py-4 w-fit">Who I am</h2>
           <div className="w-fit flex flex-col md:flex-row mx-auto items-center justify-center">
-            <div className="w-[240px] h-auto flex py-10 hover:scale-105 ease-in duration-300">
+            <div className="w-[240px] h-auto flex py-10 md:pb-20 hover:scale-105 ease-in duration-300">
               <Image
                 src={jag}
                 alt="Me"
@@ -34,12 +34,12 @@ function About({ activeLink }) {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row w-full gap-4  ">
-            <div className="md:w-1/2">
+          <div className="flex flex-col md:flex-row md:justify-center w-full gap-6 md:gap-10">
+            <div className="md:w-1/2 h-[352px]">
               <AboutCode />
             </div>
-            <div className="md:w-1/2">
-              <p className="py-2 text-gray-600">
+            <div className="md:w-1/2 md:h-[352px]">
+              <p className="py-2 text-gray-600 md:text-[18px]">
                 During my studies, I have completed several projects where I
                 have had to apply my knowledge in web development in practice.
                 These project has given me the opportunity to work in teams,
@@ -47,7 +47,7 @@ function About({ activeLink }) {
                 challenges.
               </p>
 
-              <p className="py-2 text-gray-600 underline cursor-pointer">
+              <p className="py-2 text-black underline cursor-pointer">
                 <Link
                   href={"https://www.github.com/RebeckaGamble"}
                   target="_blank"
@@ -103,7 +103,7 @@ function About({ activeLink }) {
                 className="md:grid items-center md:items-start flex flex-col md:grid-cols-4 py-6 xl:flex xl:flex-col"
               >
                 <div className="relative w-fit">
-                  <h3 className="md:col-span-1 h-fit uppercase tracking-wider w-fit pb-1.5 border-transparent relative overflow-hidden">
+                  <h3 className="md:col-span-1 h-fit text-[18px] uppercase tracking-wider w-fit pb-1.5 border-transparent relative overflow-hidden">
                     Education
                   </h3>
                   <div
@@ -154,7 +154,7 @@ function About({ activeLink }) {
                 className="md:grid items-center md:items-start flex flex-col md:grid-cols-4 pt-6 xl:flex xl:flex-col"
               >
                 <div className="relative w-fit">
-                  <h3 className="md:col-span-1 h-fit uppercase tracking-wider w-fit pb-1.5 border-transparent relative overflow-hidden">
+                  <h3 className="md:col-span-1 h-fit text-[18px] uppercase tracking-wider w-fit pb-1.5 border-transparent relative overflow-hidden">
                     Work / Internship
                   </h3>
                   <div
@@ -174,12 +174,14 @@ function About({ activeLink }) {
                     }
                     borderColor={"[#FC3A79]"}
                   />
+                  {/** 
                   <AboutCVCard
                     title={"Kruso"}
                     when={"2022 - Internship 10 weeks"}
                     text={"React, Next.js, Radix, TypeScript, Stitches"}
                     borderColor={"[#FC3A79]"}
                   />
+                  */}
                   <AboutCVCard
                     title={"Taxcro Consulting"}
                     when={"2021 - Internship 10 weeks "}
