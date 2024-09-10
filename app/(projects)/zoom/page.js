@@ -14,7 +14,6 @@ function zoomPage() {
         src={zoom}
         alt={"Zoom"}
         codeLink={"https://github.com/RebeckaGamble/zoom"}
-        demoLink={"https://zoom-taupe.vercel.app/"}
         text={
           "Assignment: <br>Create a simplified version of Zoom's homepage, Choose 2 sections in addition to navigation and the hero section."
         }

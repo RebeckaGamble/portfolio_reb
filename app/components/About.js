@@ -174,14 +174,6 @@ function About({ activeLink }) {
                     }
                     borderColor={"[#FC3A79]"}
                   />
-                  {/** 
-                  <AboutCVCard
-                    title={"Kruso"}
-                    when={"2022 - Internship 10 weeks"}
-                    text={"React, Next.js, Radix, TypeScript, Stitches"}
-                    borderColor={"[#FC3A79]"}
-                  />
-                  */}
                   <AboutCVCard
                     title={"Taxcro Consulting"}
                     when={"2021 - Internship 10 weeks "}

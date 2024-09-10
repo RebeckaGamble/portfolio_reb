@@ -37,14 +37,17 @@ export default function ProjectsCard({
             className="max-w-[800px]"
             dangerouslySetInnerHTML={{ __html: text }}
           ></p>
+
           <div className="flex gap-6">
-            <Link
-              href={`${demoLink}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="px-8 py-2 mt-4">Demo</button>
-            </Link>
+            {demoLink && (
+              <Link
+                href={`${demoLink}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="px-8 py-2 mt-4">Demo</button>
+              </Link>
+            )}
             <Link
               href={`${codeLink}`}
               target="_blank"

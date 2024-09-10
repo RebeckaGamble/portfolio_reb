@@ -49,7 +49,7 @@ function Skills() {
         <p className="text-xl tracking-widest uppercase text-[#9E2DA8]">
           Skills
         </p>
-        <h2 className="py-4">{/*I have worked with*/}I have experience in</h2>
+        <h2 className="py-4">I have experience in</h2>
         <div className="w-full py-6 shadow-md bg-slate-50 mb-10">
           <ul className="flex flex-wrap flex-row w-full font-semibold gap-4 justify-center">
             {["All", "Front-End", "DevOps", "Database", "Backend"].map(

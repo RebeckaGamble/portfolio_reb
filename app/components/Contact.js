@@ -86,67 +86,6 @@ function Contact() {
               </div>
             </div>
           </div>
-          {/**
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
-            <div className="p-4">
-              <form>
-                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                  <div className="flex flex-col">
-                    <label htmlFor="" className="uppercase text-sm">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <label htmlFor="" className="uppercase text-sm">
-                      Phone number
-                    </label>
-                    <input
-                      type="text"
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col py-2">
-                  <label htmlFor="" className="uppercase text-sm">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
-                  />
-                </div>
-                <div className="flex flex-col py-2">
-                  <label htmlFor="" className="uppercase text-sm">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
-                  />
-                </div>
-                <div className="flex flex-col py-2">
-                  <label htmlFor="" className="uppercase text-sm">
-                    Message
-                  </label>
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="10"
-                    className="border-2 rounded-lg p-3 border-gray-300"
-                  ></textarea>
-                </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-           */}
         </div>
       </div>
     </div>
