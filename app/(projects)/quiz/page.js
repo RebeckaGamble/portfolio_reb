@@ -1,5 +1,5 @@
 import React from "react";
-import quiz from "../../../public/projects/quiz.png";
+import quiz from "/public/projects/quiz.png";
 import ProjectsCard from "@/app/components/ProjectsCard";
 
 function quizPage() {

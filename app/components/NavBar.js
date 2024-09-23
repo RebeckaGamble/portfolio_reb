@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NavLinks from "./NavLinks";
-import logo from "../../public/logo.png";
+import logo from "/public/logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export default function NavBar({

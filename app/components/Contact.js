@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import stockholm from "../../public/projects/stockholm.jpg";
+import stockholm from "/public/projects/stockholm.jpg";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
@@ -9,7 +9,10 @@ import { MdOutlinePhoneIphone } from "react-icons/md";
 
 function Contact() {
   return (
-    <div id="contact" className="w-full px-2 sm:px-4 xl:max-w-[90rem] mx-auto py-16 h-auto">
+    <div
+      id="contact"
+      className="w-full px-2 sm:px-4 xl:max-w-[90rem] mx-auto py-16 h-auto"
+    >
       <div className="">
         <p className="text-xl tracking-widest uppercase text-[#9E2DA8]">
           Contact
@@ -28,8 +31,11 @@ function Contact() {
               </div>
               <div className="pt-4">
                 <h2 className="py-2">Rebecka Gamble</h2>
-                <div className="py-4">
-                  <p>I am available for vacancies from autumn 2024.</p>
+                <div className="py-4 flex flex-col gap-1">
+                  <p>
+                    I am available for internship opportunities starting
+                    November 18, 2024, and for full-time positions from Q2 2025.
+                  </p>
                   <p>Contact me and lets talk.</p>
                 </div>
                 <div className="flex flex-col gap-2">
@@ -45,12 +51,12 @@ function Contact() {
                     </span>{" "}
                     rebeckagamble@hotmail.com
                   </p>
-                  <p className="flex flex-row items-center">
+                  {/* <p className="flex flex-row items-center">
                     <span className="text-[#9E2DA8] pr-2">
                       <MdOutlinePhoneIphone size={20} />
                     </span>
                     073 984 11 87
-                  </p>
+                  </p> */}
                 </div>
               </div>
 

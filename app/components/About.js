@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import jag from "../../public/jag.jpg";
+import jag from "/public/jag.jpg";
 import AboutCode from "./AboutCode";
 import AboutCVCard from "./AboutCVCard";
 import { useInView } from "react-intersection-observer";
@@ -21,7 +21,7 @@ function About({ activeLink }) {
           <p className="uppercase text-xl tracking-widest text-[#9E2DA8] ">
             About
           </p>
-          <h2 className="py-4 w-fit">Who I am</h2>
+          {/* <h2 className="py-4 w-fit">Who I am</h2> */}
           <div className="w-fit flex flex-col md:flex-row mx-auto items-center justify-center">
             <div className="w-[240px] h-auto flex py-10 md:pb-20 hover:scale-105 ease-in duration-300">
               <Image
@@ -38,13 +38,31 @@ function About({ activeLink }) {
             <div className="md:w-1/2 h-[352px]">
               <AboutCode />
             </div>
-            <div className="md:w-1/2 md:h-[352px]">
+            <div className="md:w-1/2 md:h-auto">
               <p className="py-2 text-gray-600 md:text-[18px]">
-                During my studies, I have completed several projects where I
+                {/* During my studies, I have completed several projects where I
                 have had to apply my knowledge in web development in practice.
                 These project has given me the opportunity to work in teams,
                 with agile project methods, trello and solve technical
-                challenges.
+                challenges. */}
+                During my studies, I have developed skills in both front-end and
+                back-end web development. I have gained hands-on experience
+                working with a variety of frameworks and technologies such as
+                HTML, CSS, JavaScript, Tailwind, React, Redux (with Redux
+                Toolkit), Next.js, Node.js, MySQL, and GitHub. <br></br>
+                <br></br> I have applied this knowledge in several projects,
+                where I have worked both independently and as part of a team,
+                following agile project methodologies using tools like Trello
+                and Notion. <br></br> In one of these projects, I collaborated
+                with UX students, which provided valuable insights into the
+                design process and how to effectively implement user-centered
+                solutions in front-end development.<br></br>
+                <br></br> I have also worked extensively on creating responsive
+                websites, ensuring a seamless user experience across both mobile
+                devices and desktop. These projects have not only strengthened
+                my technical skills but also allowed me to tackle real-world
+                challenges, work in dynamic team environments, and contribute to
+                meaningful, user-focused development solutions.
               </p>
 
               <p className="py-2 text-black underline cursor-pointer">
@@ -119,7 +137,7 @@ function About({ activeLink }) {
                     title={"Frontend devloper mob/web"}
                     color="[#9E2DA8]"
                     where={"Chas Academy"}
-                    when={"2023 - "}
+                    when={"2023 - current(2025)"}
                     text={
                       "HTML, JavaScript, React, React Native, Tailwind, TypeScript, Docker, MySQL, AWS, Project methodology and agile methods"
                     }

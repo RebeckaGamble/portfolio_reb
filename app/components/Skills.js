@@ -1,18 +1,19 @@
 "use client";
 import React, { useState } from "react";
-import HTML from "../../public/skills/html.png";
-import CSS from "../../public/skills/css.png";
-import JS from "../../public/skills/javascript.png";
-import REACT from "../../public/skills/react.png";
-import AWS from "../../public/skills/aws.png";
-import Node from "../../public/skills/node.png";
-import Tailwind from "../../public/skills/tailwind.png";
-import Github from "../../public/skills/github1.png";
-import Vite from "../../public/skills/vite.svg";
-import Next from "../../public/skills/nextjs.png";
-import MySQL from "../../public/skills/mysql.webp";
-import Express from "../../public/skills/express-js.svg";
-import Firebase from "../../public/skills/firebase.png";
+import HTML from "/public/skills/html.png";
+import CSS from "/public/skills/css.png";
+import JS from "/public/skills/javascript.png";
+import REACT from "/public/skills/react.png";
+import AWS from "/public/skills/aws.png";
+import Node from "/public/skills/node.png";
+import Tailwind from "/public/skills/tailwind.png";
+import Github from "/public/skills/github1.png";
+import Vite from "/public/skills/vite.svg";
+import Redux from "/public/skills/redux.svg";
+import Next from "/public/skills/nextjs.png";
+import MySQL from "/public/skills/mysql.webp";
+import Express from "/public/skills/express-js.svg";
+import Firebase from "/public/skills/firebase.png";
 import SkillsCard from "./SkillsCard";
 
 function Skills() {
@@ -24,6 +25,7 @@ function Skills() {
     { id: "Front-End", src: JS, alt: "JavaScript" },
     { id: "Front-End", src: REACT, alt: "React" },
     { id: "Front-End", src: Next, alt: "Next.js" },
+    { id: "Front-End", src: Redux, alt: "Redux" },
     { id: "Front-End", src: Tailwind, alt: "Tailwind" },
     { id: "Front-End", src: Vite, alt: "Vite" },
     { id: "DevOps", src: Github, alt: "Github" },

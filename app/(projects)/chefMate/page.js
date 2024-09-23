@@ -1,5 +1,5 @@
 import React from "react";
-import chefMate from "../../../public/projects/chefMate.png";
+import chefMate from "/public/projects/chefMate.png";
 import ProjectsCard from "@/app/components/ProjectsCard";
 
 

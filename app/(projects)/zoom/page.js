@@ -1,5 +1,5 @@
 import React from "react";
-import zoom from "../../../public/projects/zoom.png"
+import zoom from "/public/projects/zoom.png"
 import ProjectsCard from "@/app/components/ProjectsCard";
 
 export const metadata = {

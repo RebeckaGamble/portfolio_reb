@@ -1,11 +1,11 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import zoom from "../../public/projects/zoom.png";
-import clock from "../../public/projects/clock.png";
-import quiz from "../../public/projects/quiz.png";
-import chas from "../../public/projects/chas.png";
-import chefMate from "../../public/projects/chefMate.png";
-
+import zoom from "/public/projects/zoom.png";
+import clock from "/public/projects/clock.png";
+import quiz from "/public/projects/quiz.png";
+import chas from "/public/projects/chas.png";
+import chefMate from "/public/projects/chefMate.png";
+import ecom from "/public/projects/e-com.png";
 
 const Projects = () => {
   return (
@@ -19,12 +19,19 @@ const Projects = () => {
         </p>
         <h2 className="py-4">Some school projects</h2>
         <div className="grid md:grid-cols-2 gap-8 b">
-        <ProjectItem
+          <ProjectItem
             title="ChefMate"
             backgroundImg={chefMate}
             projectURL="/chefMate"
             imgText={"ChefMate"}
             projectTech="Next.js, Tailwind, OpenAI"
+          />
+          <ProjectItem
+            title="E-commerce"
+            backgroundImg={ecom}
+            projectURL="/e-com"
+            imgText={"E-com"}
+            projectTech="Next.js, Tailwind"
           />
           <ProjectItem
             title="Landing Page"
@@ -33,6 +40,7 @@ const Projects = () => {
             imgText={"Chas Academy"}
             projectTech="HTML, Vite, Tailwind"
           />
+
           <ProjectItem
             title="Clock / Timer"
             backgroundImg={clock}

@@ -1,5 +1,5 @@
 import React from "react";
-import clock from "../../../public/projects/clock.png";
+import clock from "/public/projects/clock.png";
 import ProjectsCard from "@/app/components/ProjectsCard";
 
 

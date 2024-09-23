@@ -1,5 +1,5 @@
 import React from "react";
-import chas from "../../../public/projects/chas.png";
+import chas from "/public/projects/chas.png";
 import ProjectsCard from "@/app/components/ProjectsCard";
 
 

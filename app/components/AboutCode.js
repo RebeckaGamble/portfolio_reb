@@ -102,7 +102,7 @@ const AboutCode = () => {
   }, [currentIndex]);
 
   return (
-    <div ref={codeEditorRef} className="min-w-[320px] max-w-[400px] xl:min-w-[500px] container px-4 xl:px-8 rounded-md py-8 bg-black relative">
+    <div ref={codeEditorRef} className="min-w-[320px] max-w-[500px] my-2 xl:min-w-[500px] container px-4 xl:px-8 rounded-md py-8 bg-black relative">
       <div className="code-editor flex">
         <div className="flex-grow">
           {lines.map((line, index) => (
