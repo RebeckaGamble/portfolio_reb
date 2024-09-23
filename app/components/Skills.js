@@ -30,8 +30,8 @@ function Skills() {
     { id: "Front-End", src: Vite, alt: "Vite" },
     { id: "DevOps", src: Github, alt: "Github" },
     { id: "DevOps", src: AWS, alt: "AWS" },
-    { id: "Backend", src: Express, alt: "Express" },
-    { id: "Backend", src: Node, alt: "Node.js" },
+    { id: "Back-end", src: Express, alt: "Express" },
+    { id: "Back-end", src: Node, alt: "Node.js" },
     { id: "Database", src: MySQL, alt: "MySQL" },
     { id: "Database", src: Firebase, alt: "Firebase" },
   ];
@@ -54,7 +54,7 @@ function Skills() {
         <h2 className="py-4">I have experience in</h2>
         <div className="w-full py-6 shadow-md bg-slate-50 mb-10">
           <ul className="flex flex-wrap flex-row w-full font-semibold gap-4 justify-center">
-            {["All", "Front-End", "DevOps", "Database", "Backend"].map(
+            {["All", "Front-End", "DevOps", "Database", "Back-end"].map(
               (category) => (
                 <li
                   key={category}
