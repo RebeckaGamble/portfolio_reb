@@ -7,7 +7,7 @@ import logo from "/public/logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export default function NavBar({
-  setNavBg,
+  initialBgColor,
   color,
   onHover,
   textHover,
@@ -16,38 +16,64 @@ export default function NavBar({
 }) {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [bgColor, setBgColor] = useState(initialBgColor); 
+  
 
   const handleNav = () => {
     setNav(!nav);
   };
 
+  // useEffect(() => {
+  //   const handleShadow = () => {
+  //     if (window.scrollY >= 90) {
+  //       setShadow(true);
+  //       setBgColor(initialBgColor)
+  //     } else {
+  //       setShadow(false);
+      
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleShadow);
+  //   return () => window.removeEventListener("scroll", handleShadow);
+  // }, []);
+
   useEffect(() => {
-    const handleShadow = () => {
+    const handleScroll = () => {
       if (window.scrollY >= 90) {
-        setShadow(true);
+        setShadow(true); 
+     
+        if (initialBgColor === "transparent") {
+          setBgColor("black");
+        }
       } else {
-        setShadow(false);
+        setShadow(false); 
+        setBgColor(initialBgColor); 
       }
     };
-    window.addEventListener("scroll", handleShadow);
-    return () => window.removeEventListener("scroll", handleShadow);
-  }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [initialBgColor]); 
 
   return (
     <nav
       className={`
-      bg-${setNavBg}
+      bg-${bgColor} 
       text-${color}
       ${shadow ? "shadow-xl" : "shadow-sm"}
       fixed w-full z-[9999]
       transition-all duration-300
-      ${shadow ? "h-16" : "h-16"}
-    
+      h-16
       `}
     >
       <div className="flex justify-between items-center w-full max-w-[90rem] mx-auto h-full px-2 ">
         <Link href={"/"}>
-          <Image src={logo} alt="Logo" width={60} height={16} className="w-auto p-2" />
+          <Image
+            src={logo}
+            alt="Logo"
+            width={60}
+            height={16}
+            className="w-auto p-2"
+          />
         </Link>
         <div className="h-full">
           <ul className="relative hidden md:flex h-full w-full">

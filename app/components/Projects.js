@@ -24,7 +24,7 @@ const Projects = () => {
             backgroundImg={chefMate}
             projectURL="/chefMate"
             imgText={"ChefMate"}
-            projectTech="Next.js, Tailwind, OpenAI"
+            projectTech="Next.js, Tailwind, Express, MySQL, OpenAI"
           />
           <ProjectItem
             title="E-commerce"

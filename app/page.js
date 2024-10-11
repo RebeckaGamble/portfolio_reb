@@ -21,7 +21,6 @@ export default function Home() {
           const rect = element.getBoundingClientRect();
           if (rect.top <= 100 && rect.bottom >= 100) {
             setActiveSection(section);
-            //console.log("section: ", section)
           }
         }
       });
@@ -35,15 +34,16 @@ export default function Home() {
     <>
       <NavBar
         activeSection={activeSection}
-        setNavBg={"white"}
+        bgColor={"white"}
+        initialBgColor={"white"}
         color="black"
         textHover={"[#9E2DA8]"}
-        onHover={"border-b-2 border-[#9E2DA8] "}
+        onHover={"border-b-2 border-[#9E2DA8]"}
       />
-      <main className="max-w-screen">
+      <main className="">
         <div
           id="home"
-          className="w-full xl:max-w-[90rem] mx-auto h-screen text-center"
+          className="w-full xl:max-w-[90rem] mx-auto pt-[60px] h-screen text-center"
         >
           <div className="max-w-[1240px] w-full h-full mx-auto p-2 gap-y-4 flex flex-col justify-center items-center">
             <p className="uppercase tracking-widest text-gray-600">
