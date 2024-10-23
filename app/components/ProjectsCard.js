@@ -28,9 +28,9 @@ export default function ProjectsCard({
             className="absolute z-1 object-fill w-full h-full "
           />
         </div>
-        <div className="absolute top-[75%] w-full xl:max-w-[90rem] left-[50%] right-[50%] translate-x-[-50%]  text-white z-10 p-2">
+        <div className="absolute bottom-[5%] w-full xl:max-w-[90rem] left-[50%] right-[50%] translate-x-[-50%]  text-white z-10 p-2">
           <h2 className="py-2">{projectName}</h2>
-          <h3>{techStack}</h3>
+          <h3 className="overflow-hidden">{techStack}</h3>
         </div>
       </div>
       <div className="xl:max-w-[90rem] w-full h-auto mx-auto p-2 gap-8 py-8">

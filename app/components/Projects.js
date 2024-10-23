@@ -5,6 +5,7 @@ import clock from "/public/projects/clock.png";
 import quiz from "/public/projects/quiz.png";
 import chas from "/public/projects/chas.png";
 import chefMate from "/public/projects/chefMate.png";
+import movieQuest from "/public/projects/movieQuest1.png"
 import ecom from "/public/projects/e-com.png";
 
 const Projects = () => {
@@ -19,6 +20,13 @@ const Projects = () => {
         </p>
         <h2 className="py-4">Some school projects</h2>
         <div className="grid md:grid-cols-2 gap-8 b">
+        <ProjectItem
+            title="MovieQuest"
+            backgroundImg={movieQuest}
+            projectURL="/movieQuest"
+            imgText={"MovieQuest"}
+            projectTech="React / Redux / Tailwind CSS / TheMovieDB API"
+          />
           <ProjectItem
             title="ChefMate"
             backgroundImg={chefMate}
