@@ -21,16 +21,24 @@ function About({ activeLink }) {
           <p className="uppercase text-xl tracking-widest text-[#9E2DA8] ">
             About
           </p>
-          {/* <h2 className="py-4 w-fit">Who I am</h2> */}
           <div className="w-fit flex flex-col md:flex-row mx-auto items-center justify-center">
-            <div className="w-[240px] h-auto flex py-10 md:pb-20 hover:scale-105 ease-in duration-300">
-              <Image
-                src={jag}
-                alt="Me"
-                className="rounded-full object-cover flex-1 h-auto border-2 border-[#FC3A79]"
-                width={130}
-                height={130}
-              />
+            <div className="w-[240px] h-[240px] flex my-10 md:mb-20 hover:scale-105 ease-in duration-300 perspective">
+              {/**flip cont */}
+              <div className="relative w-full h-full transform-style-3d transition-transform duration-700 flip-card-inner">
+                <div className="absolute inset-0 flex items-center justify-center backface-hidden">
+                  <Image
+                    src={jag}
+                    alt="Me"
+                    className="rounded-full object-cover flex-1 h-auto border-2 border-[#FC3A79]"
+                    width={130}
+                    height={130}
+                  />
+                </div>
+                <div className="absolute inset-0 bg-[#FC3A79] text-white flex flex-col items-center justify-center object-cover rounded-full backface-hidden transform rotate-y-180">
+                  <p className="text-center">Rebecka Gamble</p>
+                  <p className="text-center">Junior Front-End developer</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -40,11 +48,6 @@ function About({ activeLink }) {
             </div>
             <div className="md:w-1/2 md:h-auto">
               <p className="py-2 text-gray-600 md:text-[18px]">
-                {/* During my studies, I have completed several projects where I
-                have had to apply my knowledge in web development in practice.
-                These project has given me the opportunity to work in teams,
-                with agile project methods, trello and solve technical
-                challenges. */}
                 During my studies, I have developed skills in both front-end and
                 back-end web development. I have gained hands-on experience
                 working with a variety of frameworks and technologies such as
@@ -104,11 +107,11 @@ function About({ activeLink }) {
                 <ul>
                   <li className="flex flex-row items-center">
                     <p className="rounded-full mr-2 w-2 h-2 bg-[#FC3A79]"></p>
-                    Swedish
+                    Swedish - Native language
                   </li>
                   <li className="flex flex-row items-center">
                     <p className="rounded-full mr-2 w-2 h-2 bg-[#FC3A79]"></p>
-                    English
+                    English - Proficient in both spoken and written English
                   </li>
                 </ul>
               </div>
@@ -139,7 +142,7 @@ function About({ activeLink }) {
                     where={"Chas Academy"}
                     when={"2023 - current(2025)"}
                     text={
-                      "HTML, JavaScript, React, React Native, Tailwind, TypeScript, Docker, MySQL, AWS, Project methodology and agile methods"
+                      "HTML, JavaScript, React, React Native, Redux(RTK), Tailwind, TypeScript, Docker, Cypress, MySQL, AWS, Project methodology and agile methods"
                     }
                     borderColor={"[#9E2DA8]"}
                   />

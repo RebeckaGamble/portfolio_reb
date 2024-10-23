@@ -102,14 +102,14 @@ const AboutCode = () => {
   }, [currentIndex]);
 
   return (
-    <div ref={codeEditorRef} className="min-w-[320px] max-w-[500px] my-2 xl:min-w-[500px] container px-4 xl:px-8 rounded-md py-8 bg-black relative">
-      <div className="code-editor flex">
+    <div ref={codeEditorRef} className="min-w-[320px] max-w-[560px] my-2 xl:min-w-[500px] container px-4 xl:px-8 rounded-md py-8 bg-black relative">
+      <div className="code-editor flex flex-col">
         <div className="flex-grow">
           {lines.map((line, index) => (
-            <div key={index} className={`whitespace-pre ${line.color}`}>{line.text}</div>
+            <div key={index} className={`whitespace-pre ${line.color} max-w-fit overflow-hidden `}>{line.text}</div>
           ))}
           <div className="relative">
-            {typedText && <div className={`whitespace-pre ${codeLines[currentIndex]?.color}`}>{typedText}</div>}
+            {typedText && <div className={`whitespace-pre ${codeLines[currentIndex]?.color} max-w-fit`}>{typedText}</div>}
             {showCursor && <div ref={cursorRef} className="cursor absolute top-0 left-0 h-full animate-blink text-white">|</div>}
           </div>
         </div>

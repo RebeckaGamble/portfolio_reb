@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import HTML from "/public/skills/html.png";
 import CSS from "/public/skills/css.png";
 import JS from "/public/skills/javascript.png";
+import TS from "/public/skills/typescript.svg"
 import REACT from "/public/skills/react.png";
 import AWS from "/public/skills/aws.png";
 import Node from "/public/skills/node.png";
@@ -14,6 +15,7 @@ import Next from "/public/skills/nextjs.png";
 import MySQL from "/public/skills/mysql.webp";
 import Express from "/public/skills/express-js.svg";
 import Firebase from "/public/skills/firebase.png";
+import Cypress from "/public/skills/cypress.svg"
 import SkillsCard from "./SkillsCard";
 
 function Skills() {
@@ -23,6 +25,7 @@ function Skills() {
     { id: "Front-End", src: HTML, alt: "HTML" },
     { id: "Front-End", src: CSS, alt: "CSS" },
     { id: "Front-End", src: JS, alt: "JavaScript" },
+    { id: "Front-End", src: TS, alt: "TypeScript" },
     { id: "Front-End", src: REACT, alt: "React" },
     { id: "Front-End", src: Next, alt: "Next.js" },
     { id: "Front-End", src: Redux, alt: "Redux" },
@@ -34,7 +37,10 @@ function Skills() {
     { id: "Back-end", src: Node, alt: "Node.js" },
     { id: "Database", src: MySQL, alt: "MySQL" },
     { id: "Database", src: Firebase, alt: "Firebase" },
+    { id: "Testing", src: Cypress, alt: "Cypress" },
   ];
+
+  const sortedSkillsData = skillsData.sort((a, b) => a.alt.localeCompare(b.alt));
 
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
@@ -42,8 +48,8 @@ function Skills() {
 
   const filteredSkills =
     activeCategory === "All"
-      ? skillsData
-      : skillsData.filter((skill) => skill.id === activeCategory);
+      ? sortedSkillsData
+      : sortedSkillsData.filter((skill) => skill.id === activeCategory);
 
   return (
     <div id="skills" className="w-full px-2 sm:px-4 xl:max-w-[90rem] mx-auto h-auto min-h-[800px] justify-center py-16">
@@ -54,7 +60,7 @@ function Skills() {
         <h2 className="py-4">I have experience in</h2>
         <div className="w-full py-6 shadow-md bg-slate-50 mb-10">
           <ul className="flex flex-wrap flex-row w-full font-semibold gap-4 justify-center">
-            {["All", "Front-End", "DevOps", "Database", "Back-end"].map(
+            {["All", "Front-End", "DevOps", "Database", "Back-end", "Testing"].map(
               (category) => (
                 <li
                   key={category}

@@ -51,12 +51,6 @@ function Contact() {
                     </span>{" "}
                     rebeckagamble@hotmail.com
                   </p>
-                  {/* <p className="flex flex-row items-center">
-                    <span className="text-[#9E2DA8] pr-2">
-                      <MdOutlinePhoneIphone size={20} />
-                    </span>
-                    073 984 11 87
-                  </p> */}
                 </div>
               </div>
 
