@@ -1,15 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import NavBar from "./components/NavBar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import NavBar from "./components/navbar/NavBar";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,14 +32,7 @@ export default function Home() {
 
   return (
     <>
-      <NavBar
-        activeSection={activeSection}
-        bgColor={"white"}
-        initialBgColor={"white"}
-        color="black"
-        textHover={"[#9E2DA8]"}
-        onHover={"border-b-2 border-[#9E2DA8]"}
-      />
+      <NavBar activeSection={activeSection} />
       <main className="">
         <div
           id="home"
@@ -52,13 +45,8 @@ export default function Home() {
             <h1 className=" text-gray-700">
               Hi, I'm <span className="text-[#9E2DA8]">Rebecka</span>
             </h1>
-            <h1 className=" text-gray-700">A Junior Front-End Developer</h1>
+            <h2 className=" text-gray-700">A Junior Front-End Developer</h2>
             <p className=" text-gray-600 max-w-[70%] mx-auto">
-              {/* During my studies I have acquired knowledge in front-end and
-              back-end development. I have experience working with different
-              frameworks and technologies such as HTML, CSS, JavaScript, React,
-              Node.js and MySQL. I also have practical experience of responsive
-              web design. */}
               As a front-end developer, I strive to deliver innovative solutions
               and build responsive, user-friendly websites
             </p>
@@ -74,8 +62,12 @@ export default function Home() {
                 to collaborate with a talented team and contribute effectively.
                 <br></br>
                 <br></br>
-                My internship period runs <span className="font-bold text-[#9E2DA8]"> from November 18, 2024, to May 4,
-                2025.</span> Feel free to reach out!
+                My internship period runs{" "}
+                <span className="font-bold text-[#9E2DA8]">
+                  {" "}
+                  from November 18, 2024, to May 4, 2025.
+                </span>{" "}
+                Feel free to reach out!
               </p>
             </div>
           </div>

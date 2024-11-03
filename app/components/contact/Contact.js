@@ -1,11 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import stockholm from "/public/projects/stockholm.jpg";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
-import { MdOutlinePhoneIphone } from "react-icons/md";
 
 function Contact() {
   return (
@@ -24,9 +22,11 @@ function Contact() {
             <div className="lg:p-4 h-full">
               <div>
                 <Image
-                  className="rounded-xl object-cover w-full"
-                  src={stockholm}
-                  alt="Liverpool"
+                  className="rounded-xl object-cover w-full h-auto"
+                  src={"/stockholm.jpg"}
+                  alt="Stockholm"
+                  width={280}
+                  height={240}
                 />
               </div>
               <div className="pt-4">

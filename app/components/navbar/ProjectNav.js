@@ -2,85 +2,59 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import NavLinks from "./NavLinks";
-import logo from "/public/logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import NavLinks from "./NavLinks";
 
-export default function NavBar({
-  initialBgColor,
-  color,
-  onHover,
-  textHover,
-  isMainNav,
-  activeSection,
-}) {
+const ProjectNav = ({ initialBgColor, isMainNav }) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [bgColor, setBgColor] = useState(initialBgColor); 
-  
+  const [bgColor, setBgColor] = useState(initialBgColor);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  // useEffect(() => {
-  //   const handleShadow = () => {
-  //     if (window.scrollY >= 90) {
-  //       setShadow(true);
-  //       setBgColor(initialBgColor)
-  //     } else {
-  //       setShadow(false);
-      
-  //     }
-  //   };
-  //   window.addEventListener("scroll", handleShadow);
-  //   return () => window.removeEventListener("scroll", handleShadow);
-  // }, []);
-
   useEffect(() => {
     const handleScroll = () => {
+      //   console.log("Scroll position:", window.scrollY);
       if (window.scrollY >= 90) {
-        setShadow(true); 
-     
-        if (initialBgColor === "transparent") {
-          setBgColor("black");
-        }
+        setShadow(true);
+        setBgColor("black");
       } else {
-        setShadow(false); 
-        setBgColor(initialBgColor); 
+        setShadow(false);
+        setBgColor(initialBgColor);
       }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [initialBgColor]); 
+  }, [initialBgColor]);
 
   return (
     <nav
       className={`
-      bg-${bgColor} 
-      text-${color}
-      ${shadow ? "shadow-xl" : "shadow-sm"}
-      fixed w-full z-[9999]
-      transition-all duration-300
-      h-16
+        ${bgColor === "black" ? "bg-black" : "bg-transparent"}
+        text-white
+        ${shadow ? "shadow-xl" : "shadow-sm"}
+        fixed w-full z-[9999]
+        transition-all duration-300
+        h-16
       `}
     >
       <div className="flex justify-between items-center w-full max-w-[90rem] mx-auto h-full px-2 ">
         <Link href={"/"}>
           <Image
-            src={logo}
+            src={"/logo.png"}
             alt="Logo"
             width={60}
             height={16}
-            className="w-auto p-2"
+            className="p-2 w-full h-auto"
           />
         </Link>
         <div className="h-full">
           <ul className="relative hidden md:flex h-full w-full">
             <NavLinks
-              isMainNav={`${isMainNav}`}
-              activeSection={activeSection}
-              className={`relative uppercase ml-6 px-2 h-full flex items-center hover:${onHover} hover:text-${textHover}`}
+              isMainNav={false}
+              className={`relative uppercase ml-6 px-2 h-full flex items-center`}
             />
           </ul>
         </div>
@@ -108,7 +82,13 @@ export default function NavBar({
           <div className="flex w-full justify-between pr-4">
             <div className="">
               <Link href={"/"}>
-                <Image src={logo} alt="Logo" width={87} height={25} />
+                <Image
+                  src={"/logo.png"}
+                  alt="Logo"
+                  width={87}
+                  height={25}
+                  className="w-full h-auto"
+                />
               </Link>
             </div>
             <div
@@ -136,4 +116,6 @@ export default function NavBar({
       </div>
     </nav>
   );
-}
+};
+
+export default ProjectNav;

@@ -83,41 +83,6 @@ function About({ activeLink }) {
             <p className="uppercase text-xl tracking-widest w-fi text-[#9E2DA8]">
               CV
             </p>
-            {/** 
-            <div className="flex flex-col sm:flex-row justify-start gap-6 sm:gap-20 py-6">
-              <div>
-                <h4 className="pb-2 uppercase tracking-wider">Competencies</h4>
-                <ul>
-                  <li className="flex flex-row items-center">
-                    <p className="rounded-full mr-2 w-2 h-2 bg-[#FC3A79]"></p>
-                    Collaboration skills
-                  </li>
-                  <li className="flex flex-row items-center">
-                    <p className="rounded-full mr-2 w-2 h-2 bg-[#FC3A79]"></p>
-                    Flexible
-                  </li>
-                  <li className="flex flex-row items-center">
-                    <p className="rounded-full mr-2 w-2 h-2 bg-[#FC3A79]"></p>
-                    Detail-oriented
-                  </li>
-                </ul>
-              </div>
-              <div className="">
-                <h4 className="pb-2 uppercase tracking-wider">Language</h4>
-                <ul>
-                  <li className="flex flex-row items-center">
-                    <p className="rounded-full mr-2 w-2 h-2 bg-[#FC3A79]"></p>
-                    Swedish - Native language
-                  </li>
-                  <li className="flex flex-row items-center">
-                    <p className="rounded-full mr-2 w-2 h-2 bg-[#FC3A79]"></p>
-                    English - Proficient in both spoken and written English
-                  </li>
-                </ul>
-              </div>
-            </div>
-            */}
-
             <div className="xl:flex xl:justify-between xl:flex-row">
               <div
                 ref={aboutRef}
@@ -138,7 +103,6 @@ function About({ activeLink }) {
                 <div className="pt-6 md:pt-0 xl:pt-6 md:pl-20 xl:pl-0 md:col-span-3 w-full xl:w-[600px]">
                   <AboutCVCard
                     title={"Frontend devloper mob/web"}
-                    color="[#9E2DA8]"
                     where={"Chas Academy"}
                     when={"2023 - current(2025)"}
                     text={
@@ -148,7 +112,6 @@ function About({ activeLink }) {
                   />
                   <AboutCVCard
                     title={"Web development in e-commerce"}
-                    color="[#9E2DA8]"
                     where={"Medieinstitutet"}
                     when={"2021 - 2023"}
                     text={

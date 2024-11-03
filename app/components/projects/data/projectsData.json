@@ -1,0 +1,170 @@
+{
+  "projectsData": [
+    {
+      "id": "1",
+      "projectName": "MovieQuest",
+      "src": "/projects/movieQuestReviews2.png",
+      "techStack": "React / Redux / Tailwind CSS / TheMovieDB API",
+      "alt": "MovieQuest",
+      "codeLink": "https://github.com/RebeckaGamble/movieQuest",
+      "assignment": "Develop a single-page application to retrieve and display movie data from TheMovieDB API.",
+      "keyFeatures": [
+        "Carousel on the index page showcasing selected movies.",
+        "Search form to find movies by title or genre, with highlighted search terms.",
+        "Options to sort displayed movies by title or publishing date.",
+        "Detailed movie page with reviews displayed in a modal overlay.",
+        "Favorite list functionality for adding/removing movies.",
+        "Responsive and intuitive user interface for various devices."
+      ],
+      "technologiesUsed": [
+        "React: For building the user interface.",
+        "Redux: For managing global state.",
+        "Tailwind CSS: For styling and responsive design.",
+        "TheMovieDB API: For fetching movie details, reviews, and ratings."
+      ],
+      "myRole": "Sole developer responsible for project structure, API calls, UI design, and responsiveness.",
+      "techs": ["React", "Redux", "Tailwind CSS", "TheMovieDB API"],
+      "images": [
+        {
+          "src": "/projects/movieQuest.png",
+          "alt": "Search/Sort movies",
+          "imgDesc": "Displays the search bar and sort dropdown"
+        },
+        {
+          "src": "/projects/movieQuest_singlePage.png",
+          "alt": "Single product page",
+          "imgDesc": "Single movie page"
+        },
+        {
+          "src": "/projects/movieQuestReviews.png",
+          "alt": "Single product page - Reviews modal",
+          "imgDesc": "Reviews modal open on single movie page"
+        },
+        {
+          "src": "/projects/movieQuestFav.png",
+          "alt": "Favorite page",
+          "imgDesc": "Displays saved favorite movies"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "projectName": "E-commerce",
+      "src": "/projects/e-com.png",
+      "techStack": "Next.js / Tailwind",
+      "alt": "E-commerce",
+      "codeLink": "https://github.com/RebeckaGamble/E-handel-1",
+      "assignment": "Create an e-commerce platform as a collaborative project to enable browsing and purchasing products.",
+      "keyFeatures": [
+        "Product catalog with images, descriptions, and prices.",
+        "Shopping cart with a dynamic counter for added items.",
+        "Favorites page for saving items.",
+        "Responsive design for a seamless experience on various devices."
+      ],
+      "technologiesUsed": [
+        "Next.js: For fast, interactive UI.",
+        "React: For managing dynamic components.",
+        "React DOM: For efficient component rendering.",
+        "React Icons: For enhanced UI aesthetics.",
+        "Tailwind CSS: For responsive and modern design."
+      ],
+      "myRole": "Frontend developer responsible for API integration, shopping cart, and favorites functionalities, as well as responsive layout.",
+      "techs": ["Next.js", "React", "React DOM", "React Icons"],
+      "images": [
+        {
+          "src": "/projects/e-com2.png",
+          "alt": "Search products",
+          "imgDesc": "Search bar for product search"
+        },
+        {
+          "src": "/projects/e-com-fav.png",
+          "alt": "Favorites page",
+          "imgDesc": "Saved products in favorites"
+        },
+        {
+          "src": "/projects/e-com-single-prod-page.png",
+          "alt": "Single product page",
+          "imgDesc": "Single product page with 2 items in the cart"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "projectName": "ChefMate",
+      "src": "/projects/chefMate.png",
+      "techStack": "Next.js / Tailwind / Express / MySQL / OpenAI",
+      "alt": "ChefMate",
+      "codeLink": "https://github.com/RebeckaGamble/open_ai_13",
+      "assignment": "Develop ChefMate as a group project with UX students to provide personalized AI-generated recipes based on user preferences.",
+      "keyFeatures": [
+        "Personalized recipe suggestions based on mood, time, budget, and allergies.",
+        "Recipe and image generation through OpenAI.",
+        "User login for saving favorite recipes.",
+        "MySQL database integration for secure data storage."
+      ],
+      "technologiesUsed": [
+        "OpenAI: For AI-based recipe suggestions and images.",
+        "Express: Backend framework for authentication and recipe management.",
+        "MySQL: For storing user data and preferences.",
+        "Radix UI: For accessible and customizable UI components.",
+        "Next.js: For server-side rendering and application performance.",
+        "Tailwind CSS: For responsive design."
+      ],
+      "myRole": "Developer handling OpenAI API integration, recipe storage functionality, and responsive UI design with UX input.",
+      "techs": [
+        "Next.js",
+        "Tailwind CSS",
+        "OpenAI API",
+        "Express",
+        "MySQL",
+        "Radix UI"
+      ],
+      "images": []
+    },
+    {
+      "id": "4",
+      "projectName": "Chas Academy - Landing Page",
+      "src": "/projects/chas.png",
+      "techStack": "HTML / CSS / JavaScript / Tailwind CSS / Vite",
+      "alt": "Chas Academy",
+      "codeLink": "https://github.com/RebeckaGamble/chas_landing_page",
+      "demoLink": "https://chas-landing-page.vercel.app/",
+      "assignment": "Develop an individual project to create a landing page for the school, showcasing programs, events, and contact information.",
+      "keyFeatures": [
+        "Responsive navigation menu with smooth transitions.",
+        "Dynamic navbar appearance on scroll.",
+        "Upgraded design using Tailwind CSS and Vite."
+      ],
+      "technologiesUsed": [
+        "HTML and CSS: For structuring and styling the content.",
+        "JavaScript: For interactivity like the hamburger menu and scroll effects.",
+        "Tailwind CSS (Version 2): For responsive design.",
+        "Vite: For a faster development experience."
+      ],
+      "myRole": "Sole developer for both versions of the landing page, ensuring responsive design and smooth navigation.",
+      "techs": ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Vite"],
+      "images": []
+    },
+    {
+      "id": "5",
+      "projectName": "Clock / Timer",
+      "src": "/projects/clock.png",
+      "techStack": "React / Tailwind",
+      "alt": "Clock / Timer",
+      "demoLink": "https://clock-timer-iota.vercel.app/",
+      "codeLink": "https://github.com/RebeckaGamble/clock_timer",
+      "assignment": "Assignment: <br> Practice using state in React building a clock/timer.",
+      "techs": ["React", "Tailwind"]
+    },
+    {
+      "id": "6",
+      "projectName": "Quiz",
+      "src": "/projects/quiz.png",
+      "codeLink": "https://github.com/RebeckaGamble/quiz",
+      "alt": "Quiz",
+      "assignment": "Quiz using Next.js and Context for global state management.",
+      "techStack": "Next.js / Tailwind",
+      "techs": ["Next.js", "Tailwind", "GitHub"]
+    }
+  ]
+}

@@ -1,9 +1,9 @@
-import NavBar from "../components/NavBar";
+import ProjectNav from "../components/navbar/ProjectNav";
 
 export default function ProjectLayout({ children }) {
   return (
     <>
-      <NavBar initialBgColor="transparent" color="white" isMainNav={true} />
+      <ProjectNav initialBgColor="transparent" isMainNav={false} />
       <div className="">{children}</div>
     </>
   );
